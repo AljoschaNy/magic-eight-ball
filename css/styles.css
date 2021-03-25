@@ -2,6 +2,7 @@
 html,
 body {
     height: 100%;
+    box-sizing: border-box;
 }
 
 .container {
@@ -12,8 +13,8 @@ body {
 
 /* Header section */
 header {
+    background-color: #A7D6D7;
     padding: 20px;
-    background-color: yellow;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -22,7 +23,7 @@ header {
 
 /* Main section */
 main {
-    background-color: rebeccapurple;
+    background-color: #E1F8DC;
     padding: 20px;
     display: flex;
     justify-content: center;
@@ -34,13 +35,21 @@ main textarea {
     padding: 20px;
     text-align: center;
     height: 50%;
-    display: flex;
+    background-color: rgba(red, green, blue, alpha);
+}
+
+main p {
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    height: 50%;
+    display: none;
 }
 
 
 /* Footer section */
 footer {
-    background-color: blue;
+    background-color: #A7D6D7;
     padding: 20px;
     display: flex;
     align-items: flex-start;
