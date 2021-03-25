@@ -1,0 +1,48 @@
+/* Universal Styles */
+html,
+body {
+    height: 100%;
+}
+
+.container {
+    height: 100%;
+    display: grid;
+    grid-template:2fr 3fr 2fr / 1fr;
+}
+
+/* Header section */
+header {
+    padding: 20px;
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Main section */
+main {
+    background-color: rebeccapurple;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main textarea {
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    height: 50%;
+    display: flex;
+}
+
+
+/* Footer section */
+footer {
+    background-color: blue;
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
