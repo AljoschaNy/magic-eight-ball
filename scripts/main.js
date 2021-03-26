@@ -29,28 +29,31 @@ function resetUserInput() {
     }
 };
 
-function switchMainArea() {
-    if(question.innerHTML === questionOrigin) {
-        userInput.style.display = 'block';
-        fortune.style.display = 'none';
-    } else {
-        userInput.style.display = 'none';
-        fortune.style.display = 'block';
-    }
-};
 
 // Switch question view and fortune view
 button.addEventListener('click', function(){
-    switchQuestion();
-    switchButtonText();
-    resetUserInput();
-    switchMainArea();
-
-    fortune.innerHTML = Fortune.getFortune();
+    // if textarea empty show textarea
+    if(!userInput.value) {
+        userInput.style.display = 'block';
+        fortune.style.display = 'none';
+        // Reset button and question texts to default
+        if(button.innerHTML !== buttonOrigin) {
+            switchQuestion();
+            switchButtonText();
+        }
+    //if textarea not empty show fortune paragraph
+    } else {
+        userInput.style.display = 'none';
+        fortune.style.display = 'block';
+        switchQuestion();
+        switchButtonText();
+        resetUserInput();
+        fortune.innerHTML = Fortune.getFortune();
+    }  
 });
 
 // Fortune object to switch fortunes
-let Fortune = {
+const Fortune = {
     eightBall: '',
     switchFortune(){
         let randomNumber = Math.floor(Math.random()*8);
