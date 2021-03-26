@@ -1,8 +1,49 @@
+/* Font Family Mali regular and bold */
+@font-face {
+    font-family: 'Mali';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/mali/v4/N0ba2SRONuN4SC3EDw.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Mali';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/mali/v4/N0bV2SRONuN4QJbhGlNQJA.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
 /* Universal Styles */
 html,
 body {
     height: 100%;
     box-sizing: border-box;
+    font-family: 'Mali', cursive;
+    font-size: 18px;
+}
+
+h1,
+h2,
+button {
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 2.2rem;
+}
+
+h2,
+button {
+    font-size: 1.5rem;
+}
+
+p,
+textarea {
+    font-weight: 400;
 }
 
 .container {
@@ -19,6 +60,7 @@ header {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
 }
 
 /* Main section */
@@ -34,6 +76,7 @@ main textarea {
     width: 80%;
     padding: 20px;
     text-align: center;
+    resize: none;
     height: 50%;
     background-color: rgba(red, green, blue, alpha);
 }
