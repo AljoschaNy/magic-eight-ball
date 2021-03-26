@@ -24,6 +24,11 @@ body {
     box-sizing: border-box;
     font-family: 'Mali', cursive;
     font-size: 18px;
+    color: rgb(241, 241, 241);
+}
+
+body {
+    background-color: #0c2929;
 }
 
 h1,
@@ -33,12 +38,12 @@ button {
 }
 
 h1 {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
 }
 
 h2,
 button {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 p,
@@ -54,11 +59,10 @@ textarea {
 
 /* Header section */
 header {
-    background-color: #A7D6D7;
     padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     text-align: center;
 }
@@ -66,10 +70,14 @@ header {
 /* Main section */
 main {
     background-color: #E1F8DC;
+    background-image: url('../images/main-bg.jpg');
+    background-position: center;
     padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 50px;
 }
 
 main textarea {
@@ -78,7 +86,9 @@ main textarea {
     text-align: center;
     resize: none;
     height: 50%;
-    background-color: rgba(red, green, blue, alpha);
+    background-color: rgba(255, 255, 255, 0.9);
+    border: none;
+    border-radius: 20px;
 }
 
 main p {
@@ -92,7 +102,6 @@ main p {
 
 /* Footer section */
 footer {
-    background-color: #A7D6D7;
     padding: 20px;
     display: flex;
     align-items: flex-start;
