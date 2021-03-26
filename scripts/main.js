@@ -1,4 +1,4 @@
-import Fortune from './includes/fortune';
+import Fortune from './includes/fortune.js';
 
 const questionOrigin = "What is your question?";
 const buttonOrigin = "Show Fortune";
